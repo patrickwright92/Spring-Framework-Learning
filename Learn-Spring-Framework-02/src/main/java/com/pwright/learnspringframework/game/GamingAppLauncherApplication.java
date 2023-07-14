@@ -1,10 +1,5 @@
-package com.pwright.learnspringframework;
+package com.pwright.learnspringframework.game;
 
-import com.pwright.learnspringframework.game.GameRunner;
-import com.pwright.learnspringframework.game.GamingConsole;
-import com.pwright.learnspringframework.game.MarioGame;
-import com.pwright.learnspringframework.game.PacManGame;
-import com.pwright.learnspringframework.game.SuperContraGame;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
