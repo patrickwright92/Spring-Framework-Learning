@@ -18,7 +18,7 @@ public class Todo {
 		this.done = done;
 	}
 
-	// Vairable Declarations
+	// Variable Declarations
 	private int id;
 	private String username;
 	private String description;
