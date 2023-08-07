@@ -1,12 +1,24 @@
 package com.pwright.springboot.myfirstwebapp.todo;
 
 import java.time.LocalDate;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.Id;
 import jakarta.validation.constraints.Size;
-//Database (MySQL, Oracle, MongoDB)
-//Static List of To Dos => Database (H2, MySQL)
 
+// JPA (maps bean to database)
+// Bean -> Database
+
+// This bean is mapped to an entity in the database table
+@Entity
 public class Todo {
-
+	
+	// Default constructor required to show database entries on todos page
+	public Todo() {
+		
+	}
+	
 	// Constructor
 	public Todo(int id, String username, String description, LocalDate targetDate, boolean done) {
 		super();
@@ -18,6 +30,8 @@ public class Todo {
 	}
 
 	// Variable Declarations
+	@Id
+	@GeneratedValue
 	private int id;
 	private String username;
 	
