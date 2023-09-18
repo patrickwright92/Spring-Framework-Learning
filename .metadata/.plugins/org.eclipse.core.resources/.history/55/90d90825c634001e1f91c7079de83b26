@@ -1,8 +1,0 @@
-package com.pwright.rest.webservices.restfulwebservices.helloworld;
-
-public class HelloWorldBean {
-	
-	public HelloWorldBean(String message) {
-		
-	}
-}

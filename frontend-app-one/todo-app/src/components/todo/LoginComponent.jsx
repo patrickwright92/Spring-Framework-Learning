@@ -7,7 +7,6 @@ export default function LoginComponent() {
     const [username, setUsername] = useState("Patrick")
     const [password, setPassword] = useState("")
     
-    const [showSuccessMessage, setShowSuccessMessage] = useState(false)
     const [showErrorMessage, setShowErrorMessage] = useState(false)
     
     const navigate = useNavigate()
@@ -25,24 +24,17 @@ export default function LoginComponent() {
     }
 
     function handleSubmit() {
-        if(username==='Patrick' && password==='password') {
-            authContext.setAuthenticated(true)   
-            setShowSuccessMessage(true)
-            setShowErrorMessage(false)
+        if(authContext.login(username, password)) {  
             navigate(`/welcome/${username}`)
         }
         else {
-            authContext.setAuthenticated(false)
             setShowErrorMessage(true)
-            setShowSuccessMessage(false)
-
         }
     }
 
     return (
         <div className="Login">
             <h1>Time to Login!</h1>
-            {showSuccessMessage && <div className="SuccessMessage">Authenticated Successfully</div>}
             {showErrorMessage && <div className="ErrorMessage">Authenticated Failed. Please check your credentials.</div>}
             <div className="LoginForm">
                 <div>

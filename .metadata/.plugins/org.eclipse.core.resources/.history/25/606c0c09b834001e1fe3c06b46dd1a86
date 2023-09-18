@@ -1,5 +1,0 @@
-package com.pwright.springboot.myfirstwebapp.todo;
-
-public interface TodoRepository {
-
-}

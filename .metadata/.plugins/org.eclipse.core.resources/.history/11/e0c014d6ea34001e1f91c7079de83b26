@@ -1,7 +1,0 @@
-package com.pwright.rest.webservices.restfulwebservices.exception;
-
-public class ErrorDetails {
-	
-	
-	
-}
