@@ -8,7 +8,6 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
-
 import com.pwright.rest.webservices.restfulwebservices.helloworld.HelloWorldBean;
 
 //REST API
@@ -34,7 +33,7 @@ public class HelloWorldController {
 
 	@GetMapping(path = "/hello-world/path-variable/{name}")
 	public HelloWorldBean helloWorldPathVariable(@PathVariable String name) {
-		return new HelloWorldBean(String.format("Hello World, %s", name));
+		return new HelloWorldBean(String.format("Hello Test World, %s", name));
 	}
 	
 	@GetMapping(path = "/hello-world-internationalized")
