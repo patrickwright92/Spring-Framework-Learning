@@ -8,7 +8,6 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
-import com.pwright.rest.webservices.restfulwebservices.helloworld.HelloWorldBean;
 
 //REST API
 @RestController
@@ -20,11 +19,17 @@ public class HelloWorldController {
 	public HelloWorldController(MessageSource messageSource) {
 		this.messageSource = messageSource;
 	}
-
+	// to check if authentication token is working
+	@GetMapping(path = "/basicauth")
+	public String basicAuthCheck() {
+		return "Success";
+	}
+	
 	@GetMapping(path = "/hello-world")
 	public String helloWorld() {
 		return "Hello World v2";
 	}
+
 
 	@GetMapping(path = "/hello-world-bean")
 	public HelloWorldBean helloWorldBean() {
