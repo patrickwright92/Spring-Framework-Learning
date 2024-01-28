@@ -6,6 +6,8 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="C:\code\patrickwright92\Java-Spring-Learning\learning-spring-security"/>
+			<item value="C:\code\patrickwright92\Java-Spring-Learning\mockito-demo"/>
 			<item value="C:\code\patrickwright92\Java-Spring-Learning\01-rest-api-starting-code"/>
 			<item value="C:\code\patrickwright92\Java-Spring-Learning\learn-spring-boot"/>
 			<item value="C:\code\patrickwright92\Java-Spring-Learning"/>

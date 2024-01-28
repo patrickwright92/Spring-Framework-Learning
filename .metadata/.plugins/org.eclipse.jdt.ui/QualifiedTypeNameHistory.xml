@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Qualifier"/>
-    <fullyQualifiedTypeName name="com.pwright.learnspringframework.game.GamingConsole"/>
     <fullyQualifiedTypeName name="ch.qos.logback.core.recovery.ResilientSyslogOutputStream"/>
     <fullyQualifiedTypeName name="org.springframework.context.annotation.Primary"/>
     <fullyQualifiedTypeName name="org.springframework.context.annotation.Configuration"/>
@@ -25,7 +23,6 @@
     <fullyQualifiedTypeName name="jakarta.transaction.Transactional"/>
     <fullyQualifiedTypeName name="org.springframework.data.jpa.repository.JpaRepository"/>
     <fullyQualifiedTypeName name="org.slf4j.LoggerFactory"/>
-    <fullyQualifiedTypeName name="org.slf4j.Logger"/>
     <fullyQualifiedTypeName name="org.springframework.security.provisioning.InMemoryUserDetailsManager"/>
     <fullyQualifiedTypeName name="org.springframework.security.config.annotation.authentication.configurers.provisioning.InMemoryUserDetailsManagerConfigurer"/>
     <fullyQualifiedTypeName name="org.springframework.security.core.userdetails.User"/>
@@ -45,7 +42,6 @@
     <fullyQualifiedTypeName name="org.springframework.context.i18n.LocaleContextHolder"/>
     <fullyQualifiedTypeName name="org.springframework.hateoas.server.mvc.WebMvcLinkBuilder"/>
     <fullyQualifiedTypeName name="com.fasterxml.jackson.annotation.JsonProperty"/>
-    <fullyQualifiedTypeName name="java.util.Arrays"/>
     <fullyQualifiedTypeName name="com.fasterxml.jackson.annotation.JsonIgnoreProperties"/>
     <fullyQualifiedTypeName name="com.fasterxml.jackson.annotation.JsonIgnore"/>
     <fullyQualifiedTypeName name="jakarta.persistence.GeneratedValue"/>
@@ -57,5 +53,11 @@
     <fullyQualifiedTypeName name="org.springframework.http.HttpMethod"/>
     <fullyQualifiedTypeName name="org.springframework.boot.autoconfigure.security.servlet.PathRequest"/>
     <fullyQualifiedTypeName name="jakarta.persistence.Id"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="org.mockito.junit.jupiter.MockitoExtension"/>
+    <fullyQualifiedTypeName name="java.awt.List"/>
+    <fullyQualifiedTypeName name="org.mockito.Mockito"/>
     <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="org.slf4j.Logger"/>
+    <fullyQualifiedTypeName name="org.springframework.security.web.csrf.CsrfToken"/>
 </qualifiedTypeNameHistroy>
