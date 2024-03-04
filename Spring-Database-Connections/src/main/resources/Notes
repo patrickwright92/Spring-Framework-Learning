@@ -1,0 +1,47 @@
+For H2 console to work the following dependencies need to be added to the pom.xml
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-devtools</artifactId>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jdbc</artifactId>
+		</dependency>
+		
+		<dependency>
+			<groupId>com.h2database</groupId>
+			<artifactId>h2</artifactId>
+			<scope>runtime</scope>
+		</dependency>
+
+The following needs to be added to the application.properties file		
+
+spring.h2.console.enable=true
+
+The following is not required but helpful for easy access to the H2 console
+
+spring.datasource.url=jdbc:h2:mem:customerdb
+
+The following is to set username and password
+
+spring.datasource.username=insertusernamehere
+spring.datasource.password=insertpasswordhere
+
+
+------------------JPA-----------------------
+I find it easier for data manipulation than JDBC, it just makes a lot more sense on how data can be added to entities.
+
+
+MYSQL
+setup table
+INSERT INTO mysqlcustomer.customers(name, email) VALUES ('patrick wright', 'pwright@gmail.com');
+SELECT * FROM mysqlcustomer.customers;
+
+
+													name of database not table
+spring.datasource.url=jdbc:mysql://localhost:3306/mysqlcustomer
+spring.datasource.username=root
+spring.datasource.password=checknotes
+
